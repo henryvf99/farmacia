@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>SALUTE</title>
+</head>
+<body>
+
+    <div class="min-h-full">
+     <nav class="bg-gray-800">
+       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+         <div class="flex h-16 items-center justify-between">
+           <div class="flex items-center">
+             <div class="flex-shrink-0">
+               <a href="admin-solicitudes.html">
+                <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+               </a>
+             </div>
+             <div class="hidden md:block">
+               <div class="ml-10 flex items-baseline space-x-4">
+                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                 <a href="admin-solicitudes.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Solicitudes</a>
+                 <a href="admin-productos.html" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Inventario</a>
+               </div>
+             </div>
+           </div>
+           <div class="hidden md:block">
+             <div class="ml-4 flex items-center md:ml-6">
+               <!-- Profile dropdown -->
+               <div class="relative ml-3">
+                 <div>
+                    <button id="menu" type="button" class="flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                      <span class="sr-only">Open user menu</span>
+                      <a href="login.html">
+                        <img class="h-14 w-70" src="https://www.cooperativaneptuno.cl/wp-content/uploads/2017/07/BOTON_INICIARSESION.png" alt="">
+                      </a>
+                    </button>
+                  </div>
+               </div>
+             </div>
+           </div>
+           <div class="-mr-2 flex md:hidden">
+             <!-- Mobile menu button -->
+             <button type="button" class="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" aria-controls="mobile-menu" aria-expanded="false">
+               <span class="sr-only">Open main menu</span>
+               <!-- Menu open: "hidden", Menu closed: "block" -->
+               <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+               </svg>
+               <!-- Menu open: "block", Menu closed: "hidden" -->
+               <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+               </svg>
+             </button>
+           </div>
+         </div>
+       </div>
+
+       <!-- Mobile menu, show/hide based on menu state. -->
+       <div class="md:hidden" id="mobile-menu">
+         <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+           <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+           <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
+           <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
+           <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+           <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+           <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Reports</a>
+         </div>
+         <div class="border-t border-gray-700 pb-3 pt-4">
+           <div class="flex items-center px-5">
+             <div class="flex-shrink-0">
+               <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+             </div>
+             <div class="ml-3">
+               <div class="text-base font-medium leading-none text-white">Tom Cook</div>
+               <div class="text-sm font-medium leading-none text-gray-400">tom@example.com</div>
+             </div>
+             <button type="button" class="ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+               <span class="sr-only">View notifications</span>
+               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                 <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+               </svg>
+             </button>
+           </div>
+           <div class="mt-3 space-y-1 px-2">
+             <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Your Profile</a>
+             <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Settings</a>
+             <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Sign out</a>
+           </div>
+         </div>
+       </div>
+     </nav>
+
+     <header class="bg-white shadow">
+       <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+         <h1 class="text-3xl font-bold tracking-tight text-gray-900">Farmacia SALUTE</h1>
+       </div>
+     </header>
+     <main>
+       <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold mb-4">Suministros farmacéuticos</h2>
+       </div>
+       <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8 flex justify-center">
+
+        <table class="w-3/4">
+          <thead>
+            <tr>
+              <th class="py-2 text-center">ID</th>
+              <th class="py-2 text-left">Producto</th>
+              <th class="py-2 text-center">Precio de venta</th>
+              <th class="py-2 text-center">Precio de Compra</th>
+              <th class="py-2 text-center">Fecha de Vencimiento</th>
+              <th class="py-2 text-center">Lote</th>
+              <th class="py-2 text-center">Stock</th>
+              <th class="py-2 text-center">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="py-2 text-center">1</td>
+              <td class="py-2">Paracetamol</td>
+              <td class="py-2 text-center">S/.5.00</td>
+              <td class="py-2 text-center">S/.4.00</td>
+              <td class="py-2 text-center">2024-08-30</td>
+              <td class="py-2 text-center">ABC123</td>
+              <td class="py-2 text-center">15</td>
+              <td class="py-2 text-center"><button class="solicitar-button">Solicitar</button></td>
+            </tr>
+            <tr>
+              <td class="py-2 text-center">2</td>
+              <td class="py-2">Ibuprofeno</td>
+              <td class="py-2 text-center">S/.7.00</td>
+              <td class="py-2 text-center">S/.6.00</td>
+              <td class="py-2 text-center">2024-09-15</td>
+              <td class="py-2 text-center">XYZ789</td>
+              <td class="py-2 text-center">78</td>
+              <td class="py-2 text-center"><button class="solicitar-button" disabled>Solicitar</button></td>
+            </tr>
+            <tr>
+              <td class="py-2 text-center">3</td>
+              <td class="py-2">Dalgiet 2mg Comprimido</td>
+              <td class="py-2 text-center">S/.10.00</td>
+              <td class="py-2 text-center">S/.9.00</td>
+              <td class="py-2 text-center">2024-07-25</td>
+              <td class="py-2 text-center">LMN456</td>
+              <td class="py-2 text-center">100</td>
+              <td class="py-2 text-center"><button disabled class="solicitar-button">Solicitar</button></td>
+            </tr>
+            <tr>
+              <td class="py-2 text-center">4</td>
+              <td class="py-2">Hemofolic Cápsula Blanda</td>
+              <td class="py-2 text-center">S/.5.50</td>
+              <td class="py-2 text-center">S/.4.20</td>
+              <td class="py-2 text-center">2024-11-10</td>
+              <td class="py-2 text-center">PQR123</td>
+              <td class="py-2 text-center">10</td>
+              <td class="py-2 text-center"><button class="solicitar-button">Solicitar</button></td>
+            </tr>
+            <tr>
+              <td class="py-2 text-center">5</td>
+              <td class="py-2">Diphazosin 4 Mg XL Tableta</td>
+              <td class="py-2 text-center">S/.8.00</td>
+              <td class="py-2 text-center">S/.6.50</td>
+              <td class="py-2 text-center">2025-02-20</td>
+              <td class="py-2 text-center">UVW456</td>
+              <td class="py-2 text-center">8</td>
+              <td class="py-2 text-center"><button class="solicitar-button">Solicitar</button></td>
+            </tr>
+            <tr>
+              <td class="py-2 text-center">6</td>
+              <td class="py-2">Aminoter Max Shampoo – Frasco 300 ML</td>
+              <td class="py-2 text-center">S/.12.00</td>
+              <td class="py-2 text-center">S/.10.50</td>
+              <td class="py-2 text-center">2024-10-15</td>
+              <td class="py-2 text-center">XYZ789</td>
+              <td class="py-2 text-center">80</td>
+              <td class="py-2 text-center"><button disabled class="solicitar-button">Solicitar</button></td>
+            </tr>
+            <tr>
+              <td class="py-2 text-center">7</td>
+              <td class="py-2">Slinda 4 Mg</td>
+              <td class="py-2 text-center">S/.6.00</td>
+              <td class="py-2 text-center">S/.4.80</td>
+              <td class="py-2 text-center">2024-12-30</td>
+              <td class="py-2 text-center">LMN456</td>
+              <td class="py-2 text-center">70</td>
+              <td class="py-2 text-center"><button disabled class="solicitar-button">Solicitar</button></td>
+            </tr>
+            <tr>
+              <td class="py-2 text-center">8</td>
+              <td class="py-2">Dienille 2/0.03mg</td>
+              <td class="py-2 text-center">S/.9.00</td>
+              <td class="py-2 text-center">S/.7.50</td>
+              <td class="py-2 text-center">2025-03-25</td>
+              <td class="py-2 text-center">PQR123</td>
+              <td class="py-2 text-center">90</td>
+              <td class="py-2 text-center"><button disabled class="solicitar-button">Solicitar</button></td>
+            </tr>
+            <tr>
+              <td class="py-2 text-center">9</td>
+              <td class="py-2">Oriflow Duo 0.5/0.4 Mg</td>
+              <td class="py-2 text-center">S/.11.00</td>
+              <td class="py-2 text-center">S/.9.80</td>
+              <td class="py-2 text-center">2025-01-10</td>
+              <td class="py-2 text-center">UVW456</td>
+              <td class="py-2 text-center">110</td>
+              <td class="py-2 text-center"><button disabled class="solicitar-button">Solicitar</button></td>
+            </tr>
+            <tr>
+              <td class="py-2 text-center">10</td>
+              <td class="py-2">Cardiospirina 100EC</td>
+              <td class="py-2 text-center">S/.4.50</td>
+              <td class="py-2 text-center">S/.3.80</td>
+              <td class="py-2 text-center">2024-11-05</td>
+              <td class="py-2 text-center">XYZ789</td>
+              <td class="py-2 text-center">12</td>
+              <td class="py-2 text-center"><button class="solicitar-button">Solicitar</button></td>
+            </tr>
+            <tr>
+              <td class="py-2 text-center">11</td>
+              <td class="py-2">Ecsaven Forte Capsula Blanda</td>
+              <td class="py-2 text-center">S/.10.00</td>
+              <td class="py-2 text-center">S/.8.50</td>
+              <td class="py-2 text-center">2024-12-15</td>
+              <td class="py-2 text-center">LMN456</td>
+              <td class="py-2 text-center">75</td>
+              <td class="py-2 text-center"><button disabled class="solicitar-button">Solicitar</button></td>
+            </tr>
+            <tr>
+              <td class="py-2 text-center">12</td>
+              <td class="py-2">Amoxicilina</td>
+              <td class="py-2 text-center">S/.6.50</td>
+              <td class="py-2 text-center">S/.5.20</td>
+              <td class="py-2 text-center">2024-10-20</td>
+              <td class="py-2 text-center">PQR123</td>
+              <td class="py-2 text-center">65</td>
+              <td class="py-2 text-center"><button disabled class="solicitar-button">Solicitar</button></td>
+            </tr>
+            <tr>
+              <td class="py-2 text-center">13</td>
+              <td class="py-2">Omeprazol</td>
+              <td class="py-2 text-center">S/.7.00</td>
+              <td class="py-2 text-center">S/.6.20</td>
+              <td class="py-2 text-center">2024-09-30</td>
+              <td class="py-2 text-center">UVW456</td>
+              <td class="py-2 text-center">13</td>
+              <td class="py-2 text-center"><button class="solicitar-button">Solicitar</button></td>
+            </tr>
+          </tbody>
+        </table>
+
+        </div>
+     </main>
+    </div>
+
+    <footer>
+    <div class="footer-section">
+      <h3>Contacto</h3>
+      <p>Teléfono: +51 947 456 173</p>
+      <p>Email: info@farmaciasalute.com</p>
+      <p>Dirección: av españa 123, Trujillo</p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Servicio al cliente</h3>
+      <p>Términos y condiciones</p>
+      <p>Política de devolución y cambio</p>
+      <p>Política de privacidad de datos</p>
+      <p>Preguntas frecuentes</p>
+    </div>
+    
+    <div class="footer-section">
+      <h3>Nuestras redes</h3>
+      <p>Facebook</p>
+      <p>Instagram</p>
+      <p>Twiter</p>
+    </div>
+
+  </footer>
+
+  <script src="menu.js"></script>
+  
+</body>
+</html>

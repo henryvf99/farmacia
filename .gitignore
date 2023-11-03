@@ -1,0 +1,38 @@
+# Ignorar archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos y directorios generados por el entorno de desarrollo
+/node_modules
+/build
+
+# Ignorar archivos de configuración de editor
+.vscode/
+.idea/
+*.swp
+
+# Ignorar archivos de dependencias de gestión de paquetes
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Ignorar archivos de registros y salida
+*.log
+npm-debug.log*
+
+# Ignorar archivos de entornos virtuales
+venv/
+.env
+
+# Ignorar archivos de compilación
+*.min.js
+*.min.css
+
+# Ignorar archivos de contraseñas y secretos
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignorar archivos de dependencias específicos
+/.cache/

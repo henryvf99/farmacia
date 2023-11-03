@@ -7,7 +7,7 @@ document.getElementById('login-btn').addEventListener('click', function() {
     if (email === 'usuario' && password === 'usuario') {
       window.location.href = 'index.html';
     } else if (email === 'admin' && password === 'admin') {
-      window.location.href = 'admin-pedidos.html';
+      window.location.href = 'admin-solicitudes.html';
     } else {
       alert('Credenciales inválidas');
     }

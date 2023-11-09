@@ -15,16 +15,15 @@
          <div class="flex h-16 items-center justify-between">
            <div class="flex items-center">
              <div class="flex-shrink-0">
-               <a href="admin-solicitudes.html">
+               <a href="index.html">
                 <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
                </a>
              </div>
              <div class="hidden md:block">
                <div class="ml-10 flex items-baseline space-x-4">
                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                 <a href="admin-solicitudes.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Solicitudes</a>
-                 <a href="admin-productos.html" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Inventario</a>
-                 <a href="admin-users.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Usuarios</a>
+                 <a href="cajero-solicitudes.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Solicitudes</a>
+                 <a href="cajero-productos.html" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Inventario</a>
                </div>
              </div>
            </div>
@@ -116,6 +115,7 @@
               <th class="py-2 text-center">Fecha de Vencimiento</th>
               <th class="py-2 text-center">Lote</th>
               <th class="py-2 text-center">Stock</th>
+              <th class="py-2 text-center">Acciones</th>
             </tr>
           </thead>
           <tbody>
@@ -127,6 +127,7 @@
               <td class="py-2 text-center">2024-08-30</td>
               <td class="py-2 text-center">ABC123</td>
               <td class="py-2 text-center">15</td>
+              <td class="py-2 text-center"><a href="solicitud.html" class="solicitar-button">Solicitar</a></td>
             </tr>
             <tr>
               <td class="py-2 text-center">2</td>
@@ -136,6 +137,7 @@
               <td class="py-2 text-center">2024-09-15</td>
               <td class="py-2 text-center">XYZ789</td>
               <td class="py-2 text-center">78</td>
+              <td class="py-2 text-center"><button class="solicitar-button" disabled>Solicitar</button></td>
             </tr>
             <tr>
               <td class="py-2 text-center">3</td>
@@ -145,6 +147,7 @@
               <td class="py-2 text-center">2024-07-25</td>
               <td class="py-2 text-center">LMN456</td>
               <td class="py-2 text-center">100</td>
+              <td class="py-2 text-center"><button disabled class="solicitar-button">Solicitar</button></td>
             </tr>
             <tr>
               <td class="py-2 text-center">4</td>
@@ -154,6 +157,7 @@
               <td class="py-2 text-center">2024-11-10</td>
               <td class="py-2 text-center">PQR123</td>
               <td class="py-2 text-center">10</td>
+              <td class="py-2 text-center"><button class="solicitar-button">Solicitar</button></td>
             </tr>
             <tr>
               <td class="py-2 text-center">5</td>
@@ -163,6 +167,7 @@
               <td class="py-2 text-center">2025-02-20</td>
               <td class="py-2 text-center">UVW456</td>
               <td class="py-2 text-center">8</td>
+              <td class="py-2 text-center"><button class="solicitar-button">Solicitar</button></td>
             </tr>
             <tr>
               <td class="py-2 text-center">6</td>
@@ -172,6 +177,7 @@
               <td class="py-2 text-center">2024-10-15</td>
               <td class="py-2 text-center">XYZ789</td>
               <td class="py-2 text-center">80</td>
+              <td class="py-2 text-center"><button disabled class="solicitar-button">Solicitar</button></td>
             </tr>
             <tr>
               <td class="py-2 text-center">7</td>
@@ -181,6 +187,7 @@
               <td class="py-2 text-center">2024-12-30</td>
               <td class="py-2 text-center">LMN456</td>
               <td class="py-2 text-center">70</td>
+              <td class="py-2 text-center"><button disabled class="solicitar-button">Solicitar</button></td>
             </tr>
             <tr>
               <td class="py-2 text-center">8</td>
@@ -190,6 +197,7 @@
               <td class="py-2 text-center">2025-03-25</td>
               <td class="py-2 text-center">PQR123</td>
               <td class="py-2 text-center">90</td>
+              <td class="py-2 text-center"><button disabled class="solicitar-button">Solicitar</button></td>
             </tr>
             <tr>
               <td class="py-2 text-center">9</td>
@@ -199,6 +207,7 @@
               <td class="py-2 text-center">2025-01-10</td>
               <td class="py-2 text-center">UVW456</td>
               <td class="py-2 text-center">110</td>
+              <td class="py-2 text-center"><button disabled class="solicitar-button">Solicitar</button></td>
             </tr>
             <tr>
               <td class="py-2 text-center">10</td>
@@ -208,6 +217,7 @@
               <td class="py-2 text-center">2024-11-05</td>
               <td class="py-2 text-center">XYZ789</td>
               <td class="py-2 text-center">12</td>
+              <td class="py-2 text-center"><button class="solicitar-button">Solicitar</button></td>
             </tr>
             <tr>
               <td class="py-2 text-center">11</td>
@@ -217,6 +227,7 @@
               <td class="py-2 text-center">2024-12-15</td>
               <td class="py-2 text-center">LMN456</td>
               <td class="py-2 text-center">75</td>
+              <td class="py-2 text-center"><button disabled class="solicitar-button">Solicitar</button></td>
             </tr>
             <tr>
               <td class="py-2 text-center">12</td>
@@ -226,6 +237,7 @@
               <td class="py-2 text-center">2024-10-20</td>
               <td class="py-2 text-center">PQR123</td>
               <td class="py-2 text-center">65</td>
+              <td class="py-2 text-center"><button disabled class="solicitar-button">Solicitar</button></td>
             </tr>
             <tr>
               <td class="py-2 text-center">13</td>
@@ -235,6 +247,7 @@
               <td class="py-2 text-center">2024-09-30</td>
               <td class="py-2 text-center">UVW456</td>
               <td class="py-2 text-center">13</td>
+              <td class="py-2 text-center"><button class="solicitar-button">Solicitar</button></td>
             </tr>
           </tbody>
         </table>
